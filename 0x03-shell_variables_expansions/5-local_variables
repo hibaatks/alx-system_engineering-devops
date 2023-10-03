@@ -1,2 +1,2 @@
 #!/bin/bash
-compgen -A variable -a | sort && compgen -A function -a | sort
+compgen -A variable | while read var; do echo "$var=${!var}"; done; compgen -A function
