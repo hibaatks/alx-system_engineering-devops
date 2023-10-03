@@ -1,2 +1,2 @@
 #!/bin/bash
-declare -p
+compgen -A variable -a | sort && compgen -A function -a | sort
